@@ -1,0 +1,63 @@
+/*2016年9月7日14:29:13*/
+/*For 9_7.html's CSS*/
+@charset "utf-8";
+.three{
+	background-color: #F00;
+}
+.jiazhong{
+	font-size: 50px;
+	background-color: yellow;
+}
+.nav{
+	/*This is 导航条*/
+	/*控制列表标记类型*/
+	list-style: none;
+	/*引用图片作为列表标记*/
+	list-style-image: url(../img/head_image_zhihu.jpg);
+	border: 2px solid red;
+	height: 51px;
+	width: 800px;
+	padding: 0px;
+	/*内容到标签边框 距离*/
+	margin: auto;
+	align-self: center;
+}
+.nav li{
+	/*文本对齐方式*/
+	align-self: center;
+	text-align: center;
+	width: 200px;
+	/*以下会影响框的高度 if that will li*4's height = sum of height*/
+	/*浮动属性*/
+	float: left;
+	/*行高*/
+	line-height: 50px;
+	/*外边距 两个标签*/
+	margin: 10px;
+	margin: 0px;
+	/*margin-left:10px;*/
+	padding-left: 0px;
+	background-color: yellow;
+	font-size: 40px;
+	color: #FFF;
+}
+.nav li a{
+	/*选择 nav 下の li 下の a 才拥有 此类属性*/
+	color: green;
+	/*控制 a 中 下划线*/
+	text-decoration: none;
+	/*设置 边框圆角属性*/
+	border-radius: 10px;
+}
+.nav li a:hover{
+	/*hover 指鼠标悬停之上*/
+	font-weight: bold;
+	font-family: 楷体;
+	/*鼠标悬停会变黑*/
+	color: black;
+	background-color: blue;
+	/*定义显示方式*/
+	/*display:block; 用来将行内元素 定义为块*/
+	display: block;
+	border: 1px solid white;
+}

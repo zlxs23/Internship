@@ -1,0 +1,42 @@
+<!-- 2016年9月7日14:04:57 -->
+<!-- CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>9_7</title>
+	<!-- link 应用外部样式 -->
+	<link rel="stylesheet" type="text/css" href="9_7.css">
+	<style type="text/css">
+	/*不可以 数字开头*/
+		/*标签选择器 选择所有某类标签*/
+		a{
+			text-decoration: none;
+		}
+		/*class 选择器 类型选择器 可使用 多类*/
+		.baidu{
+			color: red;
+		}
+		.sina{
+			font-size: 50px;
+		}
+		/*id 选择器 只能使用单个 id 不能 空格添加 唯一*/
+		#ljh{
+			background-color: green;
+		}
+		#lgp{
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<a href="#" style="text-decoration: none;">NIMA</a>
+	<a href="#" class="baidu">Baidu</a>
+	<a href="#" class="sina">sina</a>
+	<h1 class="baidu sina">This is level 1 Title</h1>
+	<h2 id="ljh">This h2's id=ljh</h2>
+	<h3 id="lgp">This h3's id=lgp</h3>
+	<h4 class="three">This is h4's class=three</h4>
+	<h5 class="jiazhong">This is jiazhong class</h5>
+</body>
+</html>
