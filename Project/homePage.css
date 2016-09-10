@@ -1,0 +1,9 @@
+/*2016年9月10日16:54:45*/
+*{
+	margin: 0;
+}
+.wrapper{
+	/*除 header AND footer 外，全限制在 wrapper 中*/
+	width: 1024px;
+	margin: auto;
+}
