@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	
+	margin:0;
+	padding:0;
+	outline:none;}
+
+.banner{
+	margin: auto;
+	position: relative;
+	width:1024px;
+	height:450px;
+}
+.banner img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+.banner .now{
+	z-index: 1;
+}
+.banner .btn{
+	position: absolute;
+	width: 100%;
+	top: 44%;
+	left: 0px;
+	z-index: 9;
+}
+.banner .btn .pre{
+	float: left;
+}
+.banner .btn .next{
+	float: right;
+}
+.banner .change{
+	width: 100%;
+	position:absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 20px;
+	z-index: 100;
+}
+.banner .change ul{
+	 margin: auto;
+	 height: 10px;
+}
+.banner .change ul li{
+	width: 20px;
+	height: 10px;
+	background-color: black;
+	margin-left: 7px;
+	float: left;
+}
+.banner .change ul .white{
+	background-color: white;
+}
+.banner .change ul li:first-child{
+	margin-left: 0px;
+}
+.p1{
+	margin-top:380px;}
+.change{
+	position:relative;
+	top:420px;}

@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+	border:0;
+	list-style:none;
+	font-family:"微软雅黑";
+	outline:none;
+	}
+body{
+	background-color:#0c1d2d;}
+a{
+	text-decoration:none;
+	color:#FFF;}
+.wraper{
+	width:1024px;
+	margin:auto;
+	position:relative;}
+.right{
+	float:right;}
+.left{
+	float:left;}
+nav{
+	/*border:1px red solid;*/
+	height:47px;
+	width:1024px;
+	background-color:#ff2a2a;}
+	
+nav ul li{
+	/*border:1px black solid;*/
+	font-size:19px;
+	width:146px;
+	background-color:#ff2a2a;
+	text-align:center;
+	line-height:47px;
+	}
+nav ul  li a{
+	display:block;
+	}
+nav ul li:hover a{
+	background-color:white;
+	color:#ff2a2a;
+	}
+.img1{
+	}
+
+.subNav{
+	width:1024px;
+	height:0px;
+	position:absolute;
+	top:47px;
+	left:0px;
+	margin:auto;
+	overflow:hidden;
+	background-color:#ff2a2a;
+	z-index:0;
+	transition: height 1s;
+	-moz-transition: height 1s;	/* Firefox 4 */
+	-webkit-transition: height 1s;	/* Safari 和 Chrome */
+	-o-transition: height 1s;	/* Opera */
+	}
+nav ul li:hover .subNav{
+	height:400px;
+	
+	}
+	
+.titlePic{
+	height:1035px;
+	width:1024px;
+	position:relative;
+	clear:both;
+	}
+.titlePic img{
+	z-index:-5;}
+.titlePic .np1{
+	z-index:1;}
+.article{
+	/*border:1px solid red;*/
+	height:640px;
+	width:1024px;
+	position:relative;
+	top:-50px;}
+	
+.a1{
+	height:480px;
+	
+	}
+.article img{}
+.aSqure{
+	height:480px;
+	width:1024px;
+	/*border:1px solid black;*/
+	z-index:-1;}
+.as1{
+	background-color:#74b5ff;
+	}
+.as2{
+	position:relative;
+	top:160px;
+	background-color:#bac7ff;}
+.as3{
+	position:relative;
+	top:160px;
+	background-color:#788df7;}
+.aPic{
+	position:absolute;
+	bottom:0px;}
+h1{
+	position:absolute;
+	left:50px;
+	top:25px;
+	line-height:50px;
+	z-index:2;}
+
+.SqureHead{
+	/*border:1px solid red;*/
+	position:absolute;
+	top:185px;
+	height:100px;
+	width:400px;
+	z-index:2;}
+.sh1{
+	top:25px;
+	left:25px;}
+.sh2{
+	right:25px;}
+.sh3{
+	left:25px;}
+.SqureBody{
+	/*border:1px solid blue;*/
+	position:absolute;
+	top:295px;
+	height:300px;
+	width:570px;
+	z-index:2;
+	transition: opacity 1s;
+	-moz-transition: opacity 1s;	/* Firefox 4 */
+	-webkit-transition: opacity 1s;	/* Safari 和 Chrome */
+	-o-transition: opacity 1s;	/* Opera */
+	opacity:0;}
+.sb1{
+	top:135px;
+	left:25px;}
+.sb2{
+	right:25px;
+	width:550px;}
+.sb3{
+	left:25px;}
+.article p{
+	font-size:20px;
+	line-height:35px;}
+.nextPage{
+	z-index:5;
+	/*border:1px solid black;*/
+	width:130px;
+	height:30px;
+	position:absolute;
+	left:447px;
+	bottom:3px;
+	text-align:center;
+	font-size:25px;
+	line-height:30px;
+	background-color:inherit;
+	cursor:pointer;
+	transition: opacity 2s;
+	-moz-transition: opacity 2s;	/* Firefox 4 */
+	-webkit-transition: opacity 2s;	/* Safari 和 Chrome */
+	-o-transition: opacity 2s;	/* Opera */
+	opacity:0;
+	}
+.np1{
+	bottom:700px;
+	z-index:10;
+	background-color:inherit;
+	color:#000;}

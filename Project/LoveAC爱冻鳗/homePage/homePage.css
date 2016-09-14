@@ -1,0 +1,393 @@
+/*2016年9月10日16:54:45*/
+*{
+	margin: 0;
+	/*margin: top right bottom left*/
+}
+embed{
+	height:0px;
+	width:0px;
+	}
+.wrapper{
+	/*除 header AND footer 外，全限制在 wrapper 中*/
+	width: 1024px;
+	margin: auto;
+	position: relative;
+}
+.banner{
+	height: 30px;
+}
+.lanner{
+	height: 30px;
+}
+.blur{
+	/*全窗口模糊*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/*display: none;*/
+	background-color: white;
+	z-index: 5;
+	opacity: 0.5;
+	display: none;
+}
+.login{
+	/*登录窗口*/
+	position: fixed;
+	top: 120px;
+	left: 485px;
+	right: 485px;
+	width: 380px;
+	height: 365px;
+	background-color: white;
+	opacity: 1;
+	z-index: 10;
+	display: none;
+}
+.close{
+	/*登录窗口关闭按钮*/
+	cursor: pointer;
+	float: right;
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	font-size: 20px;
+	line-height: 20px;
+	border-left: solid 1px #D3D3D3;
+}
+.input h3{
+	/*登录窗口登录标题*/
+	position: fixed;
+	top: 150px;
+	left: 658px;
+	font-weight: normal;
+	font-size: 18px;
+	margin-bottom: 30px;
+	line-height: 35px;
+	font-family:"微软雅黑";
+}
+.input img{
+	/*登录图标*/
+	width: 21px;
+	height: 21px;
+	/*border: 2px solid red;*/
+}
+.input .l1 img{
+	position: fixed;
+	top: 220px;
+	left: 600px;
+}
+.input .l2 img{
+	position: fixed;
+	top: 260px;
+	left: 600px;
+}
+.input input{
+	/*登录输入框*/
+	height: 20px;
+	padding: 0px;
+	width:135px;
+}
+.input .cB{
+	width:20px;}
+.input .l1 input{
+	position: fixed;
+	top: 220px;
+	left: 624px;
+}
+.input .l2 input{
+	position: fixed;
+	top: 260px;
+	left: 624px;
+}
+.input .l3 button:hover{
+	opacity:0.8;}
+.input .l3 button{
+	/*登录按钮*/
+	position: fixed;
+	top: 307px;
+	left: 597px;
+	width: 50px;
+	height: 30px;
+	background-color: #f96b6b;
+	border-radius: 3px;
+	border: 0px;
+	border-color: #f96b6b;
+	padding: 0px;
+	color: white;
+}
+.input .l4 input{
+	/*记住我*/
+	position: fixed;
+	top: 312px;
+	left: 706px;
+}
+.input .l4 div{
+	position: fixed;
+	top: 312px;
+	left: 726px;
+	font-size: 80%;
+}
+.social{
+	/*社交登录*/
+	position: fixed;
+	top: 377px;
+	left: 520px;
+	line-height: 19px;
+	cursor: default;
+	font-family:"微软雅黑";
+}
+.social div img{
+	/*社交图标*/
+	position: fixed;
+	top: 377px;
+	opacity: 0.4;
+	display: none;
+}
+.social div img:hover{
+	opacity: 1;
+}body header{
+	background-color: red;
+	height: 60px;
+	background-color: #ff2a2a;
+}
+#title a{
+	/*爱冻鳗*/
+	display: block;
+	height: 60px;
+	width: 100px;
+	text-align: center;
+	line-height: 55px;
+	color: white;
+	background-color: #f96b6b;
+	text-decoration: none;
+	/*border-radius: 10px;*/
+}
+#title a img{
+	width: 100%;
+	height: 70%;
+	margin-top:10px;
+}
+#title:hover a{
+
+}
+/*#title a{
+	text-decoration: none;
+	color: white;
+}
+#tile:hover a{
+	color: #f96b6b;
+	background-color: white;
+}*/
+#logo img{
+	/*logo*/
+	position: absolute;
+	right: 0px;
+	top: 7px;
+	height: 60px;
+	width: 60px;
+}
+.main{
+	/*1024X768*/
+	/*处理 position*/
+	height: 768px;
+	position: relative;
+}
+.tile{
+	overflow: hidden;
+
+}
+/*.tile a{display: block;}*/
+.tile div{
+	position: absolute;
+	top: 10px;
+	display: none;
+	background-color: black;
+	color: white;
+}
+
+/*处理 t$ margin*/
+.t1{
+	/*position 左上角*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*size*/
+	width: 301px;
+	height: 308px;
+	margin: 0px 5px 5px 0px;
+	text-align: center;
+	overflow: hidden;
+	transition: all 2s;
+}
+.t2{
+	/*position 上中*/
+	position: absolute;
+	top: 0px;
+	/*由 t1(width 301+margin-right 5) 进行判断 t2*/
+	left: 306px;
+	/*size*/
+	width: 402px;
+	height: 379px;
+	margin: 0px 5px 5px 5px;
+
+}
+.t3{
+	/*position 右上角*/
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 301px;
+	height: 328px;
+	margin: 0px 0px 5px 5px;
+}
+.t4{
+	/*position 左下角*/
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	/*size*/
+	width: 301px;
+	height: 450px;
+	margin: 5px 5px 0px 0px;
+}
+.t5{
+	/*position 下中*/
+	position: absolute;
+	/*由 t4(width 301+margin-left 5) 进行判断 t5*/
+	left: 306px;
+	bottom: 0px;
+	width: 402px;
+	height: 379px;
+	margin: 5px 5px 0px 5px;
+}
+.t6{
+	/*position 有下角*/
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	/*size*/
+	width: 301px;
+	height: 430px;
+	margin: 5px 0px 0px 5px;
+}
+.tile img{
+	transition: width 2s;
+	-webkit-transition: all 0,2s;
+}
+@keyframes fade-in{
+	0% {width: 50px;}
+	25% {width: 100px;}
+	75% {width: 150px;}
+	100% {width: 200px;}
+}
+.tile div{
+	transition: width 0.5s;
+	-moz-transition: width 0.5s; /* Firefox 4 */
+	-webkit-transition: width 0.5s; /* Safari and Chrome */
+	-o-transition: width 0.5s; /* Opera */
+	margin: auto;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	height: 50px;
+	display: block;
+	width: 0px;
+	overflow: hidden;
+	opacity: 0.6;
+	font-family:"微软雅黑";
+}
+.tile:hover div{
+	width: 200px;
+}
+.tile img:hover{
+	/*放大*/
+	transform: scale(1.05,1.05);
+	opacity: 0.5;
+	transition: opacity 0.5s;
+	/*毛玻璃*/
+	-webkit-filter: blur(5px); /* Chrome, Opera */
+	-moz-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	-moz-transition: opacity 0.5s;	/* Firefox 4 */
+	-webkit-transition: opacity 0.5s;	/* Safari 和 Chrome */
+	-o-transition: opacity 0.5s;	/* Opera */
+}
+.main img{
+	width: 100%;
+	height: 100%;
+}
+body footer{
+	height: 90px;
+	width: 100%;
+	background-color: #ff2a2a;
+	/*bottom: 0px;*/
+	/*top: 900px;*/
+	/*设置 footer 于底部*/
+	/*http://miyulano.iteye.com/blog/1897987*/
+}
+/*置顶按钮设置*/
+#mktop{
+	position: fixed;
+	right: 10px;
+	bottom: 100px;
+}
+/*hover*/
+.hover{
+	width: 105%;
+	height: 105%;
+}
+/*show content*/
+/*.cover{
+	/*add div*/
+/*	position: absolute;
+	top: 0px;
+	margin: auto;
+	border: 2px solid red;
+	width: 100%;top:0;left: 0;
+	height: 100%;
+	font-weight: bold;
+}*/
+#slogan{
+	font-family:微软雅黑;
+	font-size:22px;
+	position:absolute;
+	left:120px;
+	top:21px;
+	color:white;
+	overflow:hidden;
+	/*border:1px solid black;*/
+	height:30px;
+	width:0px;
+	cursor:default;}
+footer .wrapper{
+
+	height:90px;}
+.about{
+	height:60px;
+	width:800px;
+	/*border:1px solid black;*/
+	position:absolute;
+	bottom:12px;;
+	left:0;
+	color:white;
+	font-family:"Courier New", Courier, monospace;
+	line-height:30px;
+	font-size:13px;}
+.about h3{
+	font-family:"微软雅黑";
+	font-size:22px;
+	}
+.footpic{
+	height:89px;
+	width:90px;
+	position:absolute;
+	top:0;
+	overflow:hidden;
+	
+	right:0;}
